@@ -59,6 +59,7 @@ defmodule ExampleWeb.PW.LiveBreakingNewsTest do
     Page.goto!(page, "/live-breaking-news")
 
     ticker = Page.get_by_test_id(page, "breaking-news-ticker")
+    Expect.to_be_visible!(ticker)
     Expect.to_have_attribute!(ticker, "data-rate", "-150")
 
     Locator.click!(Page.get_by_role(page, :button, name: "← Faster"))
