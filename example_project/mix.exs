@@ -53,7 +53,7 @@ defmodule Example.MixProject do
       {:floki, ">= 0.30.0", only: :test},
       {:wallaby, "~> 0.30", runtime: false, only: :test},
       {:phoenix_test, "~> 0.9", only: :test},
-      {:playwright, "~> 1.65.0-rc.1", hex: :playwright_ex, only: :test},
+      {:playwright, github: "ftes/playwright_ex", ref: "0217c3445a6845750cdd2a9ce0355588b0147356", only: :test},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:phoenix_vite, "~> 0.4"}
     ]
