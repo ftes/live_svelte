@@ -46,3 +46,7 @@ config :logger, level: :warning
 
 # Initialize plugs at runtime for faster test compilation
 config :phoenix, :plug_init_mode, :runtime
+
+# Playwright port of the Wallaby E2E tests (test/e2e_pw)
+config :playwright, :test,
+  context_options: [base_url: "http://localhost:4002"]
